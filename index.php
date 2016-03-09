@@ -1,11 +1,12 @@
 <?php
-include "MySqlConnect.php";
+include "setSelectionLists.php";
 //let's start the session
 session_start();
 //finally, let's store our posted values in the session variables
 $_SESSION['name'] = "";
 $_SESSION['isLoggedIn']=false;
 $_SESSION['email'] = "";
+
 ?>
 
 <!DOCTYPE HTML>
@@ -84,7 +85,7 @@ $_SESSION['email'] = "";
 			<!-- Trained Network -->
 					<section id="three" class="wrapper style2 special fade-up">
 						<div class="container">
-							<form method="post" action="#">
+							<form action="session.php" method="get">
 								<div class="row uniform 50%">
 									<header class="major 12u$">
 										<h2>Run a trained Neural Network</h2>
@@ -98,28 +99,40 @@ $_SESSION['email'] = "";
 									</div>
 									<div class="12u$">
 										<div class="select-wrapper">
-											<select name="Model" id="selModel">
-												<option value="">- Model -</option>
-												<option value="1"></option>
-												<option value="1"></option>
+											<select name="selModel" id="selModel">
+												<option value="1" type="text">- Model -</option>
+												<?php
+												$i=2;
+												foreach($ResultModel as $row){
+													print '<option value="'.$i++.'" type="text">'.$row['title'].'</option>';
+												}
+												?>
 											</select>
 										</div>
 									</div>
 									<div class="12u$">
 										<div class="select-wrapper">
-											<select name="Model" id="selTalgorithm">
-												<option value="">- Training Algorithm -</option>
-												<option value="1"></option>
-												<option value="1"></option>
+											<select name="selTalgorithm" id="selTalgorithm">
+												<option value="1" type="text">- Training Algorithm -</option>
+												<?php
+												$i=2;
+												foreach($ResultTrainAlgorithm as $row) {
+													print '<option value="'.$i++.' type="text"">'.$row['title'].'</option>';
+												}
+												?>
 											</select>
 										</div>
 									</div>
 									<div class="12u$">
 										<div class="select-wrapper">
-											<select name="Model" id="selTest">
-												<option value="">- Test Set -</option>
-												<option value="1"></option>
-												<option value="1"></option>
+											<select name="selTest" id="selTest">
+												<option value="1" type="text">- Test Set -</option>
+												<?php
+												$i=2;
+												foreach($ResultTestSet as $row) {
+													print '<option value="'.$i++.' type="text"">'.$row['title'].'</option>';
+												}
+												?>
 											</select>
 										</div>
 									</div>

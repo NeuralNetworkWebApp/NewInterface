@@ -5,20 +5,21 @@
  * Date: 12-Jan-16
  * Time: 3:24 PM
  */
-include "MySqlConnect.php";
+
 //let's start the session
 session_start();
 //finally, let's store our posted values in the session variables
 
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $model = test_input($_POST["selModel"]);
-    $tAlgorithm = test_input($_POST["selAlgorithm"]);
-    $train = test_input($_POST["selTrainSet"]);
-    $test = test_input($_POST["selTestSet"]);
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    $model = test_input($_GET["selModel"]);
+    $tAlgorithm = test_input($_GET["selTalgorithm"]);
+    //$train = test_input($_GET["selTalgorithm"]);
+    $test = test_input($_GET["selTest"]);
+    print $test;
     $_SESSION['model'] = $model;
     $_SESSION['tAlgorithm'] = $tAlgorithm;
-    $_SESSION['train'] = $train;
+    //$_SESSION['train'] = $train;
     $_SESSION['test'] = $test;
 
 }
@@ -64,7 +65,7 @@ function test_input($data) {
         <form id="createNetwork_form" >
             <p><?php echo $_SESSION['model']?></p>
             <p><?php echo $_SESSION['tAlgorithm']?></p>
-            <p><?php echo $_SESSION['train']?></p>
+           <!-- <p><?php /*echo $_SESSION['train']*/?></p>-->
             <p><?php echo $_SESSION['test']?></p>
         </form>
     </div>
