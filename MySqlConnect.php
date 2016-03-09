@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "uj2?ah9r";
+$password = "";
 $dbname = "webApp";
 
 try {

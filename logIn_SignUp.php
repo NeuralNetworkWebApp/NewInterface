@@ -22,26 +22,8 @@
 
     <body class="landing">
 
-        
-<!-- Mixins-->
-<!-- Pen Title-->
-<!--<div class="pen-title">-->
-    <!--<h1>Material Login Form</h1>-->
-    <!--<span>Pen <i class='fa fa-code'></i> by <a href='http://andytran.me'>Andy Tran</a></span>-->
-<!--</div>-->
-<header id="header">
-    <h1 id="logo"><a href="index.php">Landed</a></h1>
-    <nav id="nav">
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="logIn_SignUp.php" class="button special">LogIn/SignUp</a></li>
-        </ul>
-    </nav>
-</header>
 
-<div class="rerun"><a href="">Rerun Pen</a></div>
+<div class="rerun"><a href="index.php">Back Home</a></div>
 <div class="container">
     <div class="card"></div>
     <div class="card">
@@ -63,7 +45,7 @@
             <div class="button-container">
                 <button><span>Go</span></button>
             </div>
-            <div class="footer"><a href="#">Forgot your password?</a></div>
+            <!--<div class="footer"><a href="#">Forgot your password?</a></div>-->
         </form>
     </div>
     <div class="card alt">
@@ -109,36 +91,9 @@
     </div>
 
 
-    <div class="two">
-<!--        <div class="toggle"></div>-->
-<!--        <h1 class="title">Oups! I forgot my password.-->
-<!--            <div class="close"></div>-->
-<!--        </h1>-->
-
-<!--        Forgot My Password Form-->
-
-        <!--<form id="forgotPassword_form">
-            <div class="input-container">
-                <input type="text" id="user_email" required="required"/>
-                <label for="Email">Email</label>
-                <div class="bar"></div>
-            </div>
-            <div class="button-container">
-                <button><span>Send me my password!</span></button>
-            </div>
-        </form>-->
-
-    </div>
+    
 
 
 </div>
-
-<!--<a id="portfolio" href="http://andytran.me/" title="View my portfolio!"><i class="fa fa-link"></i></a>-->
-<!--<a id="codepen" href="http://codepen.io/andytran/" title="Follow me!"><i class="fa fa-codepen"></i></a>-->
-
-
-        
-
-
     </body>
 </html>
