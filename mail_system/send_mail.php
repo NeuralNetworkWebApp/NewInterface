@@ -1,11 +1,17 @@
 <?php
 
+exec('./dokimi 2>&1', $output);
+$message="";
+
+foreach ($output as &$line) {
+    $message .= "$line<br />";
+}
+
 
 require_once('class.phpmailer.php');
 require_once('class.smtp.php');
 
-
-                             // Enable verbose debug output
+                             
 $mail = new PHPMailer();                                     // Set mailer to use SMTP\
 $mail->IsSMTP();
 $mail->SMTPDebug = 3;
@@ -17,8 +23,8 @@ $mail->Password = "katiaapanotou";
 
 $mail->SetFrom('andreasfrangou3@gmail.com', 'Web App');
 $mail->Subject = "A Transactional Email From Web App";
-$mail->MsgHTML("dcdcdcdccdcddcdccddcd");
-$mail->AddAddress("pavlides_13@hotmail.com", "Andreakis");
+$mail->MsgHTML($message);
+$mail->AddAddress("panayiotis.pavlides@gmail.com", "Andreakis");
 
 if($mail->Send()) {
     echo "Message sent!";
