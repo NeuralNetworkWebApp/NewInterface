@@ -4,11 +4,10 @@ INSERT INTO `USER` (`firstname`, `lastname`, `email`, `password`, `timesVisited`
   ('koullis', 'xatzis', 'a@a.com', '44', '0')
 ;
 
-INSERT INTO `model` (`id`, `title`) VALUES
+INSERT INTO `MODEL` (`id`, `title`) VALUES
 (1, 'model1'),
 (2, 'model2');
 
-INSERT INTO `talgorithm` (`id`, `title`) VALUES
+INSERT INTO `TRAIN_ALGORITHM` (`id`, `title`) VALUES
 (1, 'Training Algorithm 1'),
 (2, 'Training Algorithm 2');
-
