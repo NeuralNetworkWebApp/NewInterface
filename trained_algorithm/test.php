@@ -1,4 +1,3 @@
-
 <?php
 
 exec('./dokimi 2>&1', $output);

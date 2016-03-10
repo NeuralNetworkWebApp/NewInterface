@@ -24,6 +24,7 @@ $_SESSION['email'] = "";
 		<link rel="stylesheet" href="css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+        <script src="js/landing_page_handlers.js"></script>
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
@@ -146,6 +147,31 @@ $_SESSION['email'] = "";
 							</form>
 						</div>
 					</section>
+
+            <!--Run Trained Algorithm-->
+                <section id="two" class="wrapper style1 special fade-up">
+                    <div class="container">
+                        <header>
+                            <h2>Run our trained algorithm.</h2>
+                        </header>
+                        <div class="row uniform 50%">
+                            <div class="6u 12u$(xsmall)">
+                                <input type="text" name="name" id="name_trained" value="" placeholder="Name" />
+                            </div>
+                            <div class="6u$ 12u$(xsmall)">
+                                <input type="email" name="email" id="email_trained" value="" placeholder="Email" />
+                            </div>
+                            <div class="12u$">
+                                <ul class="actions">
+                                    <li><a href="#"  onClick="runAlgorithm()" class="button">Run</a></li>
+<!--                                    <li><a href="logIn_SignUp.php" class="button">Run</a></li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
