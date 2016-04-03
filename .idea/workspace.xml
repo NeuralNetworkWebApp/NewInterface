@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30c6cb2f-9387-497a-9a8c-4c1c0ccf8c0c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/queries/create.sql" afterPath="$PROJECT_DIR$/database/queries/create.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/queries/drop.sql" afterPath="$PROJECT_DIR$/database/queries/drop.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mail_system/send_mail.php" afterPath="$PROJECT_DIR$/mail_system/send_mail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Interface.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.083333" vertical-offset="2257" max-vertical-offset="3120">
+            <state vertical-scroll-proportion="0.36333334" vertical-offset="2257" max-vertical-offset="3120">
               <caret line="165" column="74" selection-start-line="165" selection-start-column="62" selection-end-line="165" selection-end-column="74" />
               <folding />
             </state>
@@ -43,8 +40,8 @@
       <file leaf-file-name="landing_page_handlers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/landing_page_handlers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="351" max-vertical-offset="1440">
-              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1545">
+              <caret line="94" column="33" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -53,8 +50,8 @@
       <file leaf-file-name="pending_results.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/anonymous_system/pending_results.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="450">
-              <caret line="6" column="62" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+            <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="450">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <marker date="1459701263000" expanded="true" signature="87:118" placeholder="SELECT * FRO..." />
               </folding>
@@ -62,13 +59,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="send_mail.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="send_mail.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mail_system/send_mail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3" vertical-offset="225" max-vertical-offset="1035">
-              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1230">
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
               <folding>
-                <marker date="1459701425000" expanded="true" signature="532:617" placeholder="INSERT INTO ..." />
+                <marker date="1459702766000" expanded="true" signature="532:617" placeholder="INSERT INTO ..." />
+                <marker date="1459702766000" expanded="true" signature="1447:1496" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
@@ -117,10 +115,10 @@
         <option value="$PROJECT_DIR$/js/handleLogIn.js" />
         <option value="$PROJECT_DIR$/trained_algorithm/test.php" />
         <option value="$PROJECT_DIR$/anonymous_system/pending_results.php" />
-        <option value="$PROJECT_DIR$/js/landing_page_handlers.js" />
         <option value="$PROJECT_DIR$/anonymous_system/generate_url.php" />
         <option value="$PROJECT_DIR$/anonymous_system/generateMD5.php" />
         <option value="$PROJECT_DIR$/mail_system/send_mail.php" />
+        <option value="$PROJECT_DIR$/js/landing_page_handlers.js" />
       </list>
     </option>
   </component>
@@ -495,12 +493,12 @@
       <workItem from="1451417669855" duration="516000" />
       <workItem from="1457549073616" duration="3030000" />
       <workItem from="1459422259991" duration="164000" />
-      <workItem from="1459699079812" duration="1854000" />
+      <workItem from="1459699079812" duration="2650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11051000" />
+    <option name="totallyTimeSpent" value="11847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="16" y="75" width="1382" height="744" extended-state="0" />
@@ -585,7 +583,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="840">
           <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
           <folding>
-            <marker date="1459701425000" expanded="true" signature="532:617" placeholder="INSERT INTO ..." />
+            <marker date="1459702766000" expanded="true" signature="532:617" placeholder="INSERT INTO ..." />
+            <marker date="1459702766000" expanded="true" signature="1447:1496" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -619,7 +618,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="840">
           <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
           <folding>
-            <marker date="1459701425000" expanded="true" signature="532:617" placeholder="INSERT INTO ..." />
+            <marker date="1459702766000" expanded="true" signature="532:617" placeholder="INSERT INTO ..." />
+            <marker date="1459702766000" expanded="true" signature="1447:1496" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -753,13 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MySqlConnect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2265861" vertical-offset="0" max-vertical-offset="0">
-          <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -842,38 +835,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.083333" vertical-offset="2257" max-vertical-offset="3120">
-          <caret line="165" column="74" selection-start-line="165" selection-start-column="62" selection-end-line="165" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/landing_page_handlers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="351" max-vertical-offset="1440">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/anonymous_system/pending_results.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="450">
-          <caret line="6" column="62" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
-          <folding>
-            <marker date="1459701263000" expanded="true" signature="87:118" placeholder="SELECT * FRO..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/anonymous_system/generateMD5.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="375">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
             <marker date="1459701405000" expanded="true" signature="108:193" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySqlConnect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25" vertical-offset="0" max-vertical-offset="600">
+          <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/anonymous_system/pending_results.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="450">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <marker date="1459701263000" expanded="true" signature="87:118" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mail_system/send_mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1230">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <marker date="1459702766000" expanded="true" signature="532:617" placeholder="INSERT INTO ..." />
+            <marker date="1459702766000" expanded="true" signature="1447:1496" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -886,13 +882,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mail_system/send_mail.php">
+    <entry file="file://$PROJECT_DIR$/js/landing_page_handlers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3" vertical-offset="225" max-vertical-offset="1035">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-          <folding>
-            <marker date="1459701425000" expanded="true" signature="532:617" placeholder="INSERT INTO ..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1545">
+          <caret line="94" column="33" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36333334" vertical-offset="2257" max-vertical-offset="3120">
+          <caret line="165" column="74" selection-start-line="165" selection-start-column="62" selection-end-line="165" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>

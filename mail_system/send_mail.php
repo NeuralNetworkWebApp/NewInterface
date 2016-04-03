@@ -24,7 +24,6 @@ try {
     $sql = "INSERT INTO `PENDING_RESULTS` (`id`, `results`)
         VALUES ('$email', '$results')";
     $conn->exec($sql);
-    echo $token;
     }
 catch(PDOException $e) {
     echo $sql . "<br>" . $e->getMessage();
@@ -56,9 +55,23 @@ $mail->Subject = "Your PSSP Results";
 $mail->MsgHTML($message);
 $mail->AddAddress($email, $name);
 
-//if($mail->Send()) {
-    //echo "Message sent!";
-//} else {
-    //echo "Mailer Error: " . $mail->ErrorInfo;
-//}
+if($mail->Send()) {
+    echo "Message sent!";
+} else {
+    echo "Mailer Error: " . $mail->ErrorInfo;
+}
+
+try {
+    // sql to delete a record
+
+    $sql = "DELETE FROM `PENDING_RESULTS` WHERE `id`='$email'";
+    // use exec() because no results are returned
+    $conn->exec($sql);
+    echo "Record deleted successfully";
+}
+catch(PDOException $e)
+{
+    echo $sql . "<br>" . $e->getMessage();
+}
+
 ?>
