@@ -15,7 +15,20 @@ $email=$json_decoded->{'email_trained'};
 $email = stripslashes($email);
 $email = mysql_real_escape_string($email);
 
-echo 1;
+//echo 1;
+
+//REGISTER THE PROCESS INTO THE DATABASE
+require("../MySqlConnect.php");
+$results = "";
+try {
+    $sql = "INSERT INTO `PENDING_RESULTS` (`id`, `results`)
+        VALUES ('$email', '$results')";
+    $conn->exec($sql);
+    echo $token;
+    }
+catch(PDOException $e) {
+    echo $sql . "<br>" . $e->getMessage();
+    }
 
 
 #Execute the algorithm
