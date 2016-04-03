@@ -171,6 +171,26 @@ $_SESSION['email'] = "";
                     </div>
                 </section>
 
+                <section id="two" class="wrapper style1 special fade-up">
+                    <div class="container">
+                        <header>
+                            <h2>Retrieve data.</h2>
+                        </header>
+                        <div class="row uniform 50%">
+                            <div class="12u 12u$(xsmall)">
+                                <input type="text" name="name" id="md5_password" value="" placeholder="MD5 Hashcode" />
+                            </div>
+
+                            <div class="12u$">
+                                <ul class="actions">
+                                    <li><a href="#"  onClick="retrieveResults()" class="button">Run</a></li>
+                                    <!--                                    <li><a href="logIn_SignUp.php" class="button">Run</a></li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
 
 			<!-- Footer -->
 				<footer id="footer">
