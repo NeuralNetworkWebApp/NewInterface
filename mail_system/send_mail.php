@@ -43,9 +43,9 @@ $mail->Subject = "Your PSSP Results";
 $mail->MsgHTML($message);
 $mail->AddAddress($email, $name);
 
-if($mail->Send()) {
+//if($mail->Send()) {
     //echo "Message sent!";
-} else {
+//} else {
     //echo "Mailer Error: " . $mail->ErrorInfo;
-}
+//}
 ?>
