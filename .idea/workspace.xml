@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30c6cb2f-9387-497a-9a8c-4c1c0ccf8c0c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mail_system/send_mail.php" afterPath="$PROJECT_DIR$/mail_system/send_mail.php" />
-    </list>
+    <list default="true" id="30c6cb2f-9387-497a-9a8c-4c1c0ccf8c0c" name="Default" comment="" />
     <ignored path="Interface.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -53,12 +50,12 @@
       <file leaf-file-name="check_results.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anonymous_system/check_results.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.625" vertical-offset="0" max-vertical-offset="765">
-              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.575" vertical-offset="0" max-vertical-offset="855">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
               <folding>
-                <marker date="1459705267000" expanded="true" signature="113:144" placeholder="SELECT * FRO..." />
-                <marker date="1459705267000" expanded="true" signature="113:164" placeholder="SELECT * FRO..." />
-                <marker date="1459705267000" expanded="true" signature="468:517" placeholder="DELETE FROM ..." />
+                <marker date="1459705412000" expanded="true" signature="113:144" placeholder="SELECT * FRO..." />
+                <marker date="1459705412000" expanded="true" signature="113:164" placeholder="SELECT * FRO..." />
+                <marker date="1459705412000" expanded="true" signature="586:635" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
@@ -503,12 +500,12 @@
       <workItem from="1451417669855" duration="516000" />
       <workItem from="1457549073616" duration="3030000" />
       <workItem from="1459422259991" duration="164000" />
-      <workItem from="1459699079812" duration="4585000" />
+      <workItem from="1459699079812" duration="4688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13782000" />
+    <option name="totallyTimeSpent" value="13885000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="16" y="75" width="1382" height="744" extended-state="0" />
@@ -930,12 +927,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/anonymous_system/check_results.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.625" vertical-offset="0" max-vertical-offset="765">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.575" vertical-offset="0" max-vertical-offset="855">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding>
-            <marker date="1459705267000" expanded="true" signature="113:144" placeholder="SELECT * FRO..." />
-            <marker date="1459705267000" expanded="true" signature="113:164" placeholder="SELECT * FRO..." />
-            <marker date="1459705267000" expanded="true" signature="468:517" placeholder="DELETE FROM ..." />
+            <marker date="1459705412000" expanded="true" signature="113:144" placeholder="SELECT * FRO..." />
+            <marker date="1459705412000" expanded="true" signature="113:164" placeholder="SELECT * FRO..." />
+            <marker date="1459705412000" expanded="true" signature="586:635" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
