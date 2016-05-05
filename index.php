@@ -14,17 +14,25 @@ include "setSelectionLists.php";
 -->
 <html>
 	<head>
-		<title>Landed by HTML5 UP</title>
+		<title>PSSP by ucy.</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+<!--        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">-->
+<!--        <link rel="icon" href="/favicon.ico" type="image/x-icon">-->
+
+
+        <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+
+
+        <!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="js/landing_page_handlers.js"></script>
 
 
 	</head>
@@ -116,7 +124,7 @@ include "setSelectionLists.php";
 								<div class="12u$">
 									<ul class="actions">
 										<li><input type="reset" id="reset2" value="Reset"/></li>
-										<li><a  href="#two" id="submit" class="button ">Submit</a></li>
+										<li><a  href="#two" id="submit" class="button">Submit</a></li>
 									</ul>
 								</div>
 							</div>
@@ -135,25 +143,11 @@ include "setSelectionLists.php";
 					</header>
 					<div class="box alt">
 						<p>Proteins are ...</p>
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal_contact_us">Conduct Us</button>
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal_contact_us">Contact Us</button>
 					</div>
 				</div>
 			</section>
-			<!-- Footer -->
-				<footer id="footer">
 
-					<ul class="icons">
-						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
 		</div>
 
         <!-- Modal Email/GenerateCode -->
@@ -202,7 +196,7 @@ include "setSelectionLists.php";
                 <div class="modal-content" id="modal_content_contact_us">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Conduct Us </h4>
+                        <h4 class="modal-title">Contact Us </h4>
                     </div>
                     <div class="modal-body" id="modal_body_contact_us">
                         <form method="post" action="#">
@@ -235,11 +229,14 @@ include "setSelectionLists.php";
 			$(document).ready(function(){
 				$("#submit").click(function(){
 					if($("#getResults").val()!="") {
+                        retrieveResults();
+
+
 						$("#div_placeCode").removeClass('has-error has-feedback');
 						$("#placeCode_required").css("display", "none");
 						$("#placeCode_ErrorStatus").css("display", "none");
 						$("#placeCode_xMark").css("display", "none");
-						alert($("#getResults").val());
+//						alert($("#getResults").val());
 					}else {
 						$("#div_placeCode").addClass('has-error has-feedback');
 						$("#placeCode_required").css("display", "block");
@@ -262,17 +259,18 @@ include "setSelectionLists.php";
 					}
 				});
 				$("#modelSubmit").click(function(){
-
 					if(!$("#email").val() &&  !$("#code").is(":checked")){
 						$("#modalA_body").parents('div').addClass('has-error has-feedback');
 						$("#choose").css("display", "block");
 					}else{
+                        alert("something");
+                        runAlgorithm();
 						$("#modalA_body").parents('div').removeClass('has-error has-feedback');
 						$("#choose").css("display", "none");
 						$("#modal_email_generateCode").modal('hide');
-                        if ($("#code").is(":checked")){
-                            alert ("Your code is: ")
-                        }
+//                        if ($("#code").is(":checked")){
+//                            alert ("Your code is: ")
+//                        }
 					}
 				});
 			});
@@ -284,6 +282,22 @@ include "setSelectionLists.php";
 			<script src="js/util.js"></script>
 			<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
 			<script src="js/main.js"></script>
+
+        <!-- Footer -->
+        <footer id="footer">
+
+            <ul class="icons">
+                <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; UCY. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
 
 	</body>
 </html>
